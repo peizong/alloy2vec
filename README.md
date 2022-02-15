@@ -16,7 +16,7 @@ and run `pip install --ignore-installed -r requirements.txt`. Note: If you are u
 1. Run `python setup.py install` to install this module. This will also download the Word2vec model files.
 If the download fails, manually download the [model](e.g., wget https://www.dropbox.com/s/tzl2zxzigbk2o9i/model_121520), 
 [word embeddings](e.g., wget https://www.dropbox.com/s/tibgnb2higuzwca/model_121520.trainables.syn1neg.npy) and 
-[output embeddings](e.g., wget https://www.dropbox.com/s/zj1uw4mlka6y2zx/model_121520.wv.vectors.npy) and put them in alloy2vec/training/models. This can be achieved by simply run the following command:
+[output embeddings](e.g., wget https://www.dropbox.com/s/zj1uw4mlka6y2zx/model_121520.wv.vectors.npy) and put them in alloy2vec/training/models. This can be achieved simply by the following command:
 ```shell
 bash download_data.sh
 ```
