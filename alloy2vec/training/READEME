@@ -1,0 +1,7 @@
+check job 787411. I include gpu for the job, see if it is accelerated.
+
+I modify the following file in line 278, check keyword "remove";
+the reason is to remove "Inf" from the list of simple formulae, 
+which is a bug in the original code;
+/nfs/home/6/peiz/.conda/envs/text-mining/lib/python3.6/site-packages/mat2vec/processing/process.py
+

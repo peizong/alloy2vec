@@ -1,0 +1,9 @@
+WARNING: Could not find any nv files on this host!
+Traceback (most recent call last):
+  File "phrase2vec.py", line 5, in <module>
+    from alloy2vec.training.helpers.utils import EpochSaver, compute_epoch_accuracies, \
+ModuleNotFoundError: No module named 'alloy2vec'
+
+real	0m0.588s
+user	0m1.910s
+sys	0m7.286s
