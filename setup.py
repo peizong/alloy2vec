@@ -59,7 +59,9 @@ class Word2vecModelDownload(install):
             else:
                 logging.info("{} successfully downloaded.".format(model_file))
         install.run(self)
-
+        os.system("wget "+"https://www.dropbox.com/s/g196rrf56nthrt4/sys_sim6.csv")
+        os.system("mv "+"alloy2vec/postprocessing/contextSimilarity/parallel_version/")
+        
     def _file_exists_correct_size(self, filename, expected_size):
         """Checks if the file exists in the download location and has the correct size.
 
