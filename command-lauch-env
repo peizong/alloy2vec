@@ -1,0 +1,1 @@
+singularity exec --overlay overlay-7.5GB-300K.ext3 /scratch/work/public/singularity/cuda11.2.2-cudnn8-devel-ubuntu20.04.sif /bin/bash
