@@ -97,25 +97,38 @@ To trend a new model, you can set parameters in postprocessing/contextSimilarity
 
 The important parameters include, the number of components for targeted high-entropy alloys, and the chemical elements to be considered in alloy design. Once these parameters are all set, submit the job to supercomputer, using the following command for slurm manager.
 
-> sbatch sub-text-mining.sh
-
+```shell
+sbatch sub-text-mining.sh
+```
 We have performed high-throughput screening using 30 transition-metal elements, the results are stored in sys_sim6.csv for 6-component HEAs, and sys_sim7.csv for 7-component HEAs.
 
-> import pandas as pd
-> data=pd.read_csv("postprocessing/contextSimilarity/parallel_version/sys_sim6.csv")
-> print(data)
-        Unnamed: 0                sys1           sys     sim
-0                0   Sc1Ti1V1Cr1Mn1Fe1   ScTiVCrMnFe  0.6377
-1                1   Sc1Ti1V1Cr1Mn1Co1   ScTiVCrMnCo  0.6232
-2                2   Sc1Ti1V1Cr1Mn1Ni1   ScTiVCrMnNi  0.6302
-3                3   Sc1Ti1V1Cr1Mn1Cu1   ScTiVCrMnCu  0.6262
-4                4   Sc1Ti1V1Cr1Mn1Zn1   ScTiVCrMnZn  0.6245
-...            ...                 ...           ...     ...
-593770      593770   W1Re1Os1Ir1Au1Hg1   WReOsIrAuHg  0.4081
-593771      593771   W1Re1Os1Pt1Au1Hg1   WReOsPtAuHg  0.4031
-593772      593772   W1Re1Ir1Pt1Au1Hg1   WReIrPtAuHg  0.4216
-593773      593773   W1Os1Ir1Pt1Au1Hg1   WOsIrPtAuHg  0.4615
-593774      593774  Re1Os1Ir1Pt1Au1Hg1  ReOsIrPtAuHg  0.4735
+```python
+import pandas as pd
+data=pd.read_csv("postprocessing/contextSimilarity/parallel_version/sys_sim6.csv")
+print(data)
+```
+>        Unnamed: 0                sys1           sys     sim
+>0                0   Sc1Ti1V1Cr1Mn1Fe1   ScTiVCrMnFe  0.6377
+>
+>1                1   Sc1Ti1V1Cr1Mn1Co1   ScTiVCrMnCo  0.6232
+>
+>2                2   Sc1Ti1V1Cr1Mn1Ni1   ScTiVCrMnNi  0.6302
+>
+>3                3   Sc1Ti1V1Cr1Mn1Cu1   ScTiVCrMnCu  0.6262
+>
+>4                4   Sc1Ti1V1Cr1Mn1Zn1   ScTiVCrMnZn  0.6245
+>
+>...            ...                 ...           ...     ...
+>
+>593770      593770   W1Re1Os1Ir1Au1Hg1   WReOsIrAuHg  0.4081
+>
+>593771      593771   W1Re1Os1Pt1Au1Hg1   WReOsPtAuHg  0.4031
+>
+>593772      593772   W1Re1Ir1Pt1Au1Hg1   WReIrPtAuHg  0.4216
+>
+>593773      593773   W1Os1Ir1Pt1Au1Hg1   WOsIrPtAuHg  0.4615
+>
+>593774      593774  Re1Os1Ir1Pt1Au1Hg1  ReOsIrPtAuHg  0.4735
 
 The last column is the averaged context similarity for HEAs, according the Eq. 1 (S).
 
