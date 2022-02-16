@@ -18,7 +18,7 @@ logging.basicConfig(format="%(asctime)s : %(levelname)s : %(message)s",
 class Word2vecModelDownload(install):
     """Downloads Word2vec models after installation if not already present."""
 
-    _MODELS_URL = 'https://www.dropbox.com/s'
+    _MODELS_URL = 'https://www.dropbox.com/s/'
     _MODELS_URL2=['tzl2zxzigbk2o9i/model_121520',
         'zj1uw4mlka6y2zx/model_121520.wv.vectors.npy',
         'tibgnb2higuzwca/model_121520.trainables.syn1neg.npy']
@@ -36,6 +36,8 @@ class Word2vecModelDownload(install):
             r = requests.get(file_url, stream=True)
             #r = wget.download(file_url)
             os.system("wget "+file_url)
+            if not os.path.exists(self._DOWNLOAD_LOCATION)
+               os.makedirs(self._DOWNLOAD_LOCATION)
             os.system("mv "+model_file+" "+self._DOWNLOAD_LOCATION)
             total_size = int(r.headers.get('content-length', 0))
             if self._file_exists_correct_size(model_file, total_size):
@@ -59,8 +61,8 @@ class Word2vecModelDownload(install):
             else:
                 logging.info("{} successfully downloaded.".format(model_file))
         install.run(self)
-        os.system("wget "+"https://www.dropbox.com/s/g196rrf56nthrt4/sys_sim6.csv")
-        os.system("mv "+"alloy2vec/postprocessing/contextSimilarity/parallel_version/")
+        os.system("wget "+https://www.dropbox.com/s/g196rrf56nthrt4/sys_sim6.csv)
+        os.system("mv sys_sim6.csv alloy2vec/postprocessing/contextSimilarity/parallel_version/")
         
     def _file_exists_correct_size(self, filename, expected_size):
         """Checks if the file exists in the download location and has the correct size.
