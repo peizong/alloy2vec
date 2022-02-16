@@ -15,7 +15,7 @@ and run `pip install --ignore-installed -r requirements.txt`. Note: If you are u
 1. Wait for all the requirements to be downloaded and installed.
 1. Run `python setup.py install` to install this module. This will also download the Word2vec model files.
 If the download fails, manually download the [model](e.g., wget https://www.dropbox.com/s/tzl2zxzigbk2o9i/model_121520), 
-[word embeddings](e.g., wget https://www.dropbox.com/s/tibgnb2higuzwca/model_121520.trainables.syn1neg.npy) and 
+[word embeddings](e.g., wget https://www.dropbox.com/s/tibgnb2higuzwca/model_121520.trainables.syn1neg.npy, and wget https://www.dropbox.com/s/8bz4h2dia7eop6h/model_121520.trainables.syn1.npy) and 
 [output embeddings](e.g., wget https://www.dropbox.com/s/zj1uw4mlka6y2zx/model_121520.wv.vectors.npy) and put them in alloy2vec/training/models. This can be achieved simply by the following command:
 ```shell
 bash download_data.sh
@@ -136,8 +136,7 @@ print(data)
 The last column is the averaged context similarity for HEAs, according the Eq. 1 (S).
 
 ### Related Work
-The authors benefited a lot from the existing work focusing on energy materials, e.g.,
-"Unsupervised word embeddings capture latent knowledge from materials science literature", *Nature*  571, 95?~@~S98 (2019), doi: [10.1038/s41586-019-1335-8](https://www.nature.com/articles/s41586-019-1335-8)
+Pei et al., Towards the design of ultra-high-entropy alloys enabled by mining 6.4 million texts, submitted, 2022.
 
 ### Issues?
 
