@@ -45,7 +45,7 @@ For the various methods and options see the docstrings in the code.
 Load and query for similar words and phrases:
 ```python
 from gensim.models import Word2Vec
-w2v_model = Word2Vec.load("alloy2vec/training/alloys_model/models/model_121520")
+w2v_model = Word2Vec.load("alloy2vec/training/models/model_121520")
 w2v_model.wv.most_similar("CoCrFeMnNi")
 ```
 > w2v_model.wv.most_similar("CoCrFeMnNi",topn=10)
