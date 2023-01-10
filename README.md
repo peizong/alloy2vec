@@ -80,7 +80,7 @@ to use the `process()` method of `mat2vec.processing.MaterialsTextProcessor`.
 
 #### Training
 
-To run an example training, navigate to *mat2vec/training/* and run
+To run an example training, navigate to *alloy2vec/training/* and run
 
 ```shell
 python phrase2vec.py --corpus=data/corpus_example --model_name=model_example
