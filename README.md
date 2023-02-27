@@ -1,4 +1,4 @@
-### This toolkit is part of our work "Towards the design of ultra-high-entropy alloys enabled by mining 6.4 million texts", submitted, 2022, by Zongrui Pei, Junqi Yin, Peter K. Liaw and Dierk Raabe.
+### This toolkit is part of our work "Toward the design of ultrahigh-entropy alloys via mining six million texts", Nature Communications 14, Article number: 54 (2023), by Zongrui Pei, Junqi Yin, Peter K. Liaw and Dierk Raabe (https://www.nature.com/articles/s41467-022-35766-5).
 
 We acknowledge all the contributors whose existing work/toolkits make our work possible, particularly gensim and mat2vec. This new toolkit introduces the power of text mining to the high-entropy and ICME community. It provides a powerful and brand-new way to design multicomponent alloys with many components. We coin a new term, ultra-high entropy alloys, for this kind of alloy. This work is partly motivated by Cantor, who called for bolder actions to explore high-entropy alloys with more than five components. We show structural materials can benefit from mining the vast amount of publications.
 
