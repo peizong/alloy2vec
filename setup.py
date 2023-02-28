@@ -36,7 +36,7 @@ class Word2vecModelDownload(install):
             r = requests.get(file_url, stream=True)
             #r = wget.download(file_url)
             os.system("wget "+file_url)
-            if not os.path.exists(self._DOWNLOAD_LOCATION)
+            if not os.path.exists(self._DOWNLOAD_LOCATION):
                os.makedirs(self._DOWNLOAD_LOCATION)
             os.system("mv "+model_file+" "+self._DOWNLOAD_LOCATION)
             total_size = int(r.headers.get('content-length', 0))
