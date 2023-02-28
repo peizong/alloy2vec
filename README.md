@@ -17,9 +17,7 @@ and run `pip install --ignore-installed -r requirements.txt`. Note: If you are u
 If the download fails, manually download the [model](e.g., wget https://www.dropbox.com/s/tzl2zxzigbk2o9i/model_121520), 
 [word embeddings](e.g., wget https://www.dropbox.com/s/tibgnb2higuzwca/model_121520.trainables.syn1neg.npy, and wget https://www.dropbox.com/s/8bz4h2dia7eop6h/model_121520.trainables.syn1.npy) and 
 [output embeddings](e.g., wget https://www.dropbox.com/s/zj1uw4mlka6y2zx/model_121520.wv.vectors.npy) and put them in alloy2vec/training/models. This can be achieved simply by the following command:
-```shell
-bash download_data.sh
-```
+`bash download_data.sh`
 1. Finalize your chemdataextractor installation by executing ``cde data download`` (You may need to restart your virtual environment for the cde command line interface to be found).
 
 #### Preparing data
