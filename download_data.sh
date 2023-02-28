@@ -1,12 +1,16 @@
 #!/bin/bash
-  
+
 #download the model
 wget https://www.dropbox.com/s/tzl2zxzigbk2o9i/model_121520
 wget https://www.dropbox.com/s/tibgnb2higuzwca/model_121520.trainables.syn1neg.npy
 wget https://www.dropbox.com/s/zj1uw4mlka6y2zx/model_121520.wv.vectors.npy
 wget https://www.dropbox.com/s/ashco4x5wccc5kl/model_121520_phraser.pkl
-wget https://www.dropbox.com/s/zj1uw4mlka6y2zx/model_121520.wv.vectors.npy
 mv model_121520* alloy2vec/training/models/
+
+#download pkl file
+wget https://www.dropbox.com/s/ashco4x5wccc5kl/model_121520_phraser.pkl
+mkdir alloy2vec/processing/models
+mv model_121520_phraser.pkl alloy2vec/processing/models/phraser.pkl
 
 #download designed HEAs of 6 components
 wget https://www.dropbox.com/s/g196rrf56nthrt4/sys_sim6.csv
