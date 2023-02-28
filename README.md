@@ -8,7 +8,7 @@ There are two methods to install alloy2vec. The first method is, to download thi
 The second one is to install mat2vec, and then (i) replace all existing files with the modified ones of alloy2vec; (ii) for data preprocessing and postprocessing that involves our new method, you have to put our files in the right directory. This is more complex than the first method.
 
 ### Instructions
-1. Make sure the python version is `python3.6`; Or create an environment with the right version using `conda` or `pip`, like, `conda create --name py36 python=3.6` 
+1. Make sure the python version is `python3.8`; Or create an environment with the right version using `conda` or `pip`, like, `conda create --name py38 python=3.8` 
 We recommend using [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 1. Navigate to the root folder of this repository (the same folder that contains this README file)
 and run `pip install --ignore-installed -r requirements.txt`. Note: If you are using a conda env and any packages fail to compile during this step, you may need to first install those packages separately with `conda install package_name`. 
