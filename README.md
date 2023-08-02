@@ -134,7 +134,7 @@ print(data)
 The last column is the averaged context similarity for HEAs, according the Eq. 1 (S).
 
 ### Related Work
-Pei et al., Towards the design of ultra-high-entropy alloys enabled by mining 6.4 million texts, submitted, 2022.
+Pei et al., Towards the design of ultra-high-entropy alloys enabled by mining 6.4 million texts, 2023. https://www.nature.com/articles/s41467-022-35766-5
 
 ### Issues?
 
