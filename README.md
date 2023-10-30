@@ -19,6 +19,7 @@ If the download fails, manually download the [model](e.g., wget https://www.drop
 [output embeddings](e.g., wget https://www.dropbox.com/s/zj1uw4mlka6y2zx/model_121520.wv.vectors.npy) and put them in alloy2vec/training/models. This can be achieved simply by the following command:
 `bash download_data.sh`
 1. Finalize your chemdataextractor installation by executing ``cde data download`` (You may need to restart your virtual environment for the cde command line interface to be found).
+2. If you want to use Jupyter Notebook, don't forget to install ipykernel `pip install ipykernel`; otherwise the kernel won't appear as an option.
 
 #### Preparing data
 Most of the corpora are downloaded using the Elsevier API, which is in json format. Then they were cleaned and tranformed into (i) plain text for skip-gram model, and (ii) tabulated word triples for knowledge graph model.
