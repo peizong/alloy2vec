@@ -9,7 +9,7 @@ The second one is to install mat2vec, and then (i) replace all existing files wi
 
 ### Instructions
 1. Make sure the python version is `python3.8`; Or create an environment with the right version using `conda` or `pip`, like, `conda create --name py38 python=3.8` 
-We recommend using [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+We recommend using [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). Then activate the enviroment py38, `conda activate py38`.
 1. Download the code with this command line or other methods `git clone https://github.com/peizong/alloy2vec.git`. Navigate to the root folder of this repository (the same folder that contains this README file)
 and run `pip install --ignore-installed -r requirements.txt`. Note: If you are using a conda env and any packages fail to compile during this step, you may need to first install those packages separately with `conda install package_name`. 
 1. Wait for all the requirements to be downloaded and installed.
